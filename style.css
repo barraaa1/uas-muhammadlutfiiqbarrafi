@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --secondary-color: #64748b;
+  --bg-color: #f1f5f9;
+  --card-bg: #ffffff;
+  --text-dark: #1e293b;
+  --border-color: #cbd5e1;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* CONTAINER */
+.container {
+  background-color: var(--card-bg);
+  padding: 32px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* TITLE */
+h2 {
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+/* FORM GROUP */
+.form-group {
+  margin-bottom: 16px;
+}
+
+/* LABEL */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #334155;
+  font-size: 14px;
+}
+
+/* INPUT & SELECT */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* TEXTAREA */
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* DATE & TIME WRAPPER */
+.form-inline {
+  display: flex;
+  gap: 12px;
+}
+
+.form-inline .form-group {
+  flex: 1;
+}
+
+/* CHECKBOX */
+.checkbox-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.checkbox-group input {
+  margin-top: 4px;
+}
+
+.checkbox-group label {
+  font-size: 13px;
+  font-weight: normal;
+  color: #475569;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 13px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* BACK LINK */
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .container {
+    padding: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
